@@ -1,0 +1,9 @@
+Package: fr.rootfs.rode
+Name: Rode
+Version: 1.0
+Architecture: iphoneos-arm
+Description: Scramble the passcode view on your lockscreen!
+Maintainer: rootfs
+Author: rootfs
+Section: Tweaks
+Depends: mobilesubstrate (>= 0.9.5000)
