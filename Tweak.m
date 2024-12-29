@@ -13,9 +13,8 @@
 @end
 
 void shuffle(int *array, int n) {
-    srand((unsigned)time(NULL));
     for (int i = 0; i < n - 1; i++) {
-        size_t j = i + rand() / (RAND_MAX / (n - i) + 1);
+        int j = i + (int)arc4random_uniform(n - i);
         int t = array[j];
         array[j] = array[i];
         array[i] = t;
